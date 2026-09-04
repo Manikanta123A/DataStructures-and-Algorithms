@@ -2,8 +2,6 @@ class Solution {
 public:
     int firstStableIndex(vector<int>& nums, int k) {
         int n = nums.size();
-
-        // result[i] = minimum value from nums[i] to nums[n-1]
         vector<int> result(n);
 
         result[n - 1] = nums[n - 1];
