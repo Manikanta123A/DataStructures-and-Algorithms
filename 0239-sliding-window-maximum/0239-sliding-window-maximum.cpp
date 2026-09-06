@@ -11,7 +11,7 @@ public:
                 q.pop_back();
             }
             q.push_back(i);
-            if( i>=k-1 ){
+            if( i >= k-1 ){
                 result.push_back(nums[q.front()]);
             }
         }
