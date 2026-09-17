@@ -2,7 +2,7 @@ class Solution:
     def longestBalanced(self, s: str) -> int:
         ans = 1
 
-        # One character
+ 
         count = 1
 
         for i in range(1, len(s)):
@@ -13,7 +13,6 @@ class Solution:
 
             ans = max(ans, count)
 
-        # Two characters
         def two_chars(a, b, forbidden):
             best = 0
             count_a = 0
@@ -46,7 +45,6 @@ class Solution:
         ans = max(ans, two_chars('b', 'c', 'a'))
         ans = max(ans, two_chars('a', 'c', 'b'))
 
-        # Three characters
         seen = {(0, 0): -1}
         a = b = c = 0
 
